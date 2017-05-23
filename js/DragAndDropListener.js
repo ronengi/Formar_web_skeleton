@@ -59,7 +59,7 @@ function DragAndDropListener() {
             var elm = self.draggedElement;
             if (elm.classList.contains("resizeHandle"))
                 resizeHandle_dragover(event, elm.id);
-            else if (self.draggedElement.classList.contains("InfoTom"))
+            else if (elm.classList.contains("InfoTom"))
                 infotom.dragover(event, elm.id);
         });
     };
@@ -88,4 +88,4 @@ function DragAndDropListener() {
     this.dragover();
     this.drop();
 
-    }
+}
