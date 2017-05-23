@@ -17,6 +17,7 @@
  */
 
 var infotom;
+var resizehandle;
 
 /**
  * Add all drag & drop event listeners related to drag and drop functionality.
@@ -35,7 +36,7 @@ function DragAndDropListener() {
         document.addEventListener("dragstart", function (event) {
             self.draggedElement = event.target;
             if (event.target.classList.contains("resizeHandle"))
-                resizeHandle_dragstart(event);
+                resizehandle.dragstart(event);
             else if (event.target.classList.contains("InfoTom"))
                 infotom.dragstart(event);
             // else if (event.target.classList.contains("InfoCompound"))
@@ -47,7 +48,7 @@ function DragAndDropListener() {
     this.drag = function() {
         document.addEventListener("drag", function (event) {
             if (event.target.classList.contains("resizeHandle"))
-                resizeHandle_drag(event);
+                resizehandle.drag(event);
             else if (event.target.classList.contains("InfoTom"))
                 infotom.drag(event);
         });
@@ -58,7 +59,7 @@ function DragAndDropListener() {
         document.addEventListener("dragover", function (event) {
             var elm = self.draggedElement;
             if (elm.classList.contains("resizeHandle"))
-                resizeHandle_dragover(event, elm.id);
+                resizehandle.dragover(event, elm.id);
             else if (elm.classList.contains("InfoTom"))
                 infotom.dragover(event, elm.id);
         });
@@ -77,7 +78,7 @@ function DragAndDropListener() {
             var elm = self.draggedElement;
             self.draggedElement = null;
             if (elm.classList.contains("resizeHandle"))
-                resizeHandle_drop(event, elm.id);
+                resizehandle.drop(event, elm.id);
             else if (elm.classList.contains("InfoTom"))
                 infotom.drop(event, elm.id);
         });

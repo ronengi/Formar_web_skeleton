@@ -1,4 +1,4 @@
-/* 
+/*
  *
  *   Copyright 2017 Ronen Gilead-Raz
  *
@@ -17,8 +17,6 @@
  */
 
 function InfoTom() {
-
-    var self = this;
 
     // dragstart
     this.dragstart = function (event) {
