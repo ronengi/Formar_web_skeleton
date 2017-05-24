@@ -39,8 +39,8 @@ function DragAndDropListener() {
                 resizehandle.dragstart(event);
             else if (event.target.classList.contains("InfoTom"))
                 infotom.dragstart(event);
-            // else if (event.target.classList.contains("InfoCompound"))
-            //     InfoCompound.dragstart(event);
+            else if (event.target.classList.contains("InfoCompound"))
+                 infocompound.dragstart(event);
         });
     };
 
@@ -51,6 +51,8 @@ function DragAndDropListener() {
                 resizehandle.drag(event);
             else if (event.target.classList.contains("InfoTom"))
                 infotom.drag(event);
+            else if (event.target.classList.contains("InfoCompound"))
+                infocompound.drag(event);
         });
     };
         
@@ -62,6 +64,8 @@ function DragAndDropListener() {
                 resizehandle.dragover(event, elm.id);
             else if (elm.classList.contains("InfoTom"))
                 infotom.dragover(event, elm.id);
+            else if (elm.classList.contains("InfoCompound"))
+                infocompound.dragover(event, elm.id);
         });
     };
 
@@ -81,6 +85,8 @@ function DragAndDropListener() {
                 resizehandle.drop(event, elm.id);
             else if (elm.classList.contains("InfoTom"))
                 infotom.drop(event, elm.id);
+            else if (elm.classList.contains("InfoCompound"))
+                infocompound.drop(event, elm.id);
         });
     };
 

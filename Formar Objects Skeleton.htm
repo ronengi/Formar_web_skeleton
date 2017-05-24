@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html><head>
 
-<!--
+        <!--
+        
+           Copyright 2017 Ronen Gilead-Raz
+        
+          Licensed under the Apache License, Version 2.0 (the "License");
+          you may not use this file except in compliance with the License.
+          You may obtain a copy of the License at
+        
+              http://www.apache.org/licenses/LICENSE-2.0
+        
+          Unless required by applicable law or agreed to in writing, software
+          distributed under the License is distributed on an "AS IS" BASIS,
+          WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          See the License for the specific language governing permissions and
+          limitations under the License.
+        
+        -->
 
-   Copyright 2017 Ronen Gilead-Raz
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-
- -->
- 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>Formar Objects Skeleton</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="js/DragAndDropListener.js"></script>
         <script src="js/InfoTom.js"></script>
+        <script src="js/InfoCompound.js"></script>
         <script src="js/ResizeHandle.js"></script>
 
         <script src="js/page_init.js"></script>
-        
+
         <link rel="stylesheet" href="css/formar.htm">
         <link rel="stylesheet" href="css/alerter.css">
         <link rel="stylesheet" href="css/InfoCompound.css">
         <link rel="stylesheet" href="css/InfoTom.css">
+        <link rel="stylesheet" href="css/ResizeHandle.css">
     </head>
     <body>
 
-<div id="alerter">alerter</div>
+        <div id="alerter">alerter</div>
 
-<br>
-<div style="max-width: 500px; margin: auto; padding: 15px;text-align: center; border: 2px solid red;">Information Nodes</div>
-<br>
+        <br>
+        <div style="max-width: 500px; margin: auto; padding: 15px;text-align: center; border: 2px solid red;">Information Nodes</div>
+        <br>
 
-<div id="it_id_1" class="InfoCompound" style="left: 100px; top: 80px; width: 100px; height: 30px;" draggable="true">vim
-    <div id="rh_it_id_1" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true">  ≡  </div>
-</div>
+        <div id="it_id_1" class="InfoCompound" style="left: 80px; top: 120px; width: 350px; height: 230px;" draggable="true">vim
 
-<div id="it_id_2" class="InfoTom" style="left: 200px; top: 140px; width: 200px; height: 20px;" draggable="true">Configuration
-    <div id="rh_it_id_2" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true">  ≡  </div>
-</div>
+            <div id="it_id_2" class="InfoCompound" style="left: 10px; top: 20px; width: 320px; height: 190px;" draggable="true">Configuration
 
-<div id="it_id_3" class="InfoTom" style="left: 400px; top: 200px; width: 100px; height: 20px;" draggable="true">Files
-    <div id="rh_it_id_3" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true">  ≡  </div>
-</div>
+                <div id="it_id_3" class="InfoCompound" style="left: 10px; top: 20px; width: 300px; height: 150px;" draggable="true">Files
 
-<div id="it_id_4" class="InfoTom" style="left: 500px; top: 270px; width: 100px; height: 20px;" draggable="true">~/.vimrc
-    <div id="rh_it_id_4" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true">  ≡  </div>
-</div>
+                    <div id="it_id_4" class="InfoTom" style="left: 10px; top: 20px; width: 80px; height: 20px;" draggable="true">~/.vimrc
+                        <div id="rh_it_id_4" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true"> &square; </div>
+                    </div>
 
-<div id="it_id_5" class="InfoTom" style="left: 500px; top: 350px; width: 100px; height: 20px;" draggable="true">/etc/vimrc
-    <div id="rh_it_id_5" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true">  ≡  </div>
-</div>
+                    <div id="it_id_5" class="InfoTom" style="left: 10px; top: 50px; width: 80px; height: 20px;" draggable="true">/etc/vimrc
+                        <div id="rh_it_id_5" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true"> &square; </div>
+                    </div>
 
-<div id="it_id_6" class="InfoTom" style="left: 500px; top: 430px; width: 300px; height: 20px;" draggable="true">/var/abs/extra/vim/vimrc
-    <div id="rh_it_id_6" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true">  ≡  </div>
-</div>
+                    <div id="it_id_6" class="InfoTom" style="left: 10px; top: 80px; width: 200px; height: 20px;" draggable="true">/var/abs/extra/vim/vimrc
+                        <div id="rh_it_id_6" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true"> &square; </div>
+                    </div>
 
-<div id="it_id_7" class="InfoTom" style="left: 500px; top: 500px; width: 350px; height: 20px;" draggable="true">/usr/share/vim/vim80/vimrc_example.vim
-    <div id="rh_it_id_7" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true">  ≡  </div>
-</div>
+                    <div id="it_id_7" class="InfoTom" style="left: 10px; top: 110px; width: 250px; height: 20px;" draggable="true">/usr/share/vim/vim80/vimrc_example.vim
+                        <div id="rh_it_id_7" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true"> &square; </div>
+                    </div>
 
-<br>
-    
-</body></html>
+                    <div id="rh_it_id_3" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true"> &square; </div>
+                </div>
+
+                <div id="rh_it_id_2" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true"> &square; </div>
+            </div>
+
+            <div id="rh_it_id_1" class="resizeHandle" style="right: 1px; bottom: 1px;" draggable="true"> &square; </div>
+        </div>
+
+        <br>
+
+    </body></html>

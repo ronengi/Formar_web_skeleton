@@ -16,11 +16,12 @@
 
 div.InfoTom {
     position: absolute;
-    border: 2px solid lightgray;
+    border: 1px solid white;
     border-radius: 2px;
-    padding: 8px;
+    padding-left: 5px;
+    padding-top: 3px;
     background-color: whitesmoke;
-    font-size: 0.8em;
+    font-size: 12px;
     font-family: "Arial";
     white-space: nowrap;
 }
@@ -30,10 +31,9 @@ div.resizeHandle {
     position: absolute;
     border: 1px solid blue;
     border-radius: 3px;
-    padding: 1px 3px;
-    background-color: lime;
+    padding: 0px 1px;
+    background-color: lightgray;
 }
-
 
 /* New editable InfoTom */
 div.addnewone {

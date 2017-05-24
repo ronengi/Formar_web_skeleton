@@ -16,22 +16,21 @@
 
 div.InfoCompound {
     position: absolute;
-    border: 1px solid gray;
-    border-radius: 4px;
-    padding: 8px;
-    background-color: lightgreen;
+    border-top: 1px;
+    border-bottom: 2px;
+    border-right: 2px;
+    border-left: 1px;
+    border-color: white;
+    border-style: solid;
+    
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-color: whitesmoke;
+    font-size: 12px;
+    font-family: "Arial";
     white-space: nowrap;
 }
-
-
-div.resizeHandle {
-    position: absolute;
-    border: 1px solid blue;
-    border-radius: 3px;
-    padding: 1px 3px;
-    background-color: lime;
-}
-
 
 /* New editable InfoCompound */
 div.addnewone {
