@@ -24,6 +24,7 @@ div.InfoTom {
     font-size: 12px;
     font-family: "Arial";
     white-space: nowrap;
+    cursor: crosshair;
 }
 
 

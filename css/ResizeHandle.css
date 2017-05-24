@@ -20,4 +20,9 @@ div.resizeHandle {
     border-radius: 1px;
     padding: 0px;
     background-color: white;
+    cursor: se-resize;
+}
+
+div.resizeHandle.rtl {
+    cursor: sw-resize;
 }
