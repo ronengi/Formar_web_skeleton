@@ -16,48 +16,12 @@
  *
  */
 
+/* global InfoTom */
+
 function InfoCompound() {
-
-    // dragstart
-    this.dragstart = function (event) {
-        var dt = event.dataTransfer;
-        var me = event.target;
-        var myStyle = document.defaultView.getComputedStyle(me);
-        var myLeft = parseInt(myStyle.getPropertyValue("left"), 10) - event.clientX;
-        var myTop = parseInt(myStyle.getPropertyValue("top"), 10) - event.clientY;
-        me.style.opacity = "0.9";
-        dt.setData("text/plain", myLeft + "," + myTop);
-
-        document.getElementById("alerter").innerHTML = "Dragging Information Node";
-    };
-
-    // drag
-    this.drag = function (event) {
-        event.preventDefault();
-        // var dt = event.target;
-        // dt.effectAllowed = "all";
-        // dt.dropEffect = "move";
-    };
-
-    // dragover
-    this.dragover = function (event, e_id) {
-        event.preventDefault();
-        var me = document.getElementById(e_id);
-        var dt = event.dataTransfer;
-        var myData = dt.getData("text/plain").split(',');
-        var myLeft = parseInt(myData[0], 10);
-        var myTop = parseInt(myData[1], 10);
-        me.style.left = myLeft + event.clientX + 'px';
-        me.style.top = myTop + event.clientY + 'px';
-    };
-
-    // drop
-    this.drop = function (event, e_id) {
-        event.preventDefault();
-        var me = document.getElementById(e_id);
-        me.style.opacity = "";
-
-        document.getElementById("alerter").innerHTML = "ready";
-    };
-
+    InfoTom.call(this);
+    this.info_drag = "Dragging InfoCompound";
 }
+
+InfoCompound.prototype = Object.create(InfoTom.prototype);
+InfoCompound.prototype.constructor = InfoCompound;
