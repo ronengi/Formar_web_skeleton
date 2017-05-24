@@ -16,13 +16,14 @@
 
 div.InfoTom {
     position: absolute;
-    border: 1px solid white;
-    border-radius: 2px;
+    border: 1px outset white;
+    border-radius: 3px;
     padding-left: 5px;
     padding-top: 3px;
     background-color: whitesmoke;
     font-size: 12px;
     font-family: "Arial";
+    font-style: normal;
     white-space: nowrap;
     cursor: crosshair;
 }

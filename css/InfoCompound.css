@@ -16,19 +16,14 @@
 
 div.InfoCompound {
     position: absolute;
-    border-top: 1px;
-    border-bottom: 2px;
-    border-right: 2px;
-    border-left: 1px;
-    border-color: white;
-    border-style: solid;
-    
+    border: 1px outset white;
     border-radius: 2px;
     padding-left: 5px;
     padding-top: 3px;
     background-color: whitesmoke;
     font-size: 12px;
     font-family: "Arial";
+    font-style: italic;
     white-space: nowrap;
 
     cursor: crosshair;
