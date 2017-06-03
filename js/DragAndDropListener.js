@@ -17,6 +17,7 @@
  */
 
 var infotom;
+var infocompound;
 var resizehandle;
 
 /**
